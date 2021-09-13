@@ -47,9 +47,9 @@ body {
 }
 .single-product {
   padding: 10px;
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 4px 4px 7px rgb(32, 2, 2);
   border-radius: 10px;
-  
+  background-color: rgb(252, 247, 241);
   transition: 0.5s ease-in-out;
  
 }

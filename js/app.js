@@ -9,7 +9,7 @@ const loadProducts = () => {
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    console.log(product.rating)
+    console.log(product)
     const productsContainer = document.getElementById('all-products');
 
     const image = product.image;
