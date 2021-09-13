@@ -1,11 +1,15 @@
+#navbar{
+  background-color:#9308AC ;
+}
 .nav-item{
   font-size: 20px;
   /* text-decoration: none; */
 }
 
 .nav-item:hover{
-  background-color: white;
+  background-color:orange;
   border-radius: 5px;
+  text-decoration: none;
 }
 body {
   overflow-x: hidden;
