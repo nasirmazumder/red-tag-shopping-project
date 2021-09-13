@@ -69,6 +69,16 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+.fa-star.filled{
+  color: orange;
+}
+.fa-star.empty{
+  color: #aeaeae;
+}
+.clothes-rating{
+  display: flex;
+  
+}
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
