@@ -15,7 +15,7 @@ const showProducts = (products) => {
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
-    div.innerHTML = `<div class="single-product">
+    div.innerHTML = `<div class="single-product mb-5">
       <div>
     <img class="product-image" src=${image}></img>
       </div>
@@ -42,7 +42,7 @@ const showProducts = (products) => {
       `;
     productsContainer.appendChild(div);
 
-    
+
   }
 };
 
@@ -81,8 +81,8 @@ const updateTaxAndCharge = () => {
   const priceConverted = getInputValue("price");
   if (priceConverted > 200) {
     setInnerText("delivery-charge", 30);
-   const totalTex= setInnerText("total-tax", priceConverted * 0.2);
-   toa
+    const totalTex = setInnerText("total-tax", priceConverted * 0.2);
+    toa
   }
   if (priceConverted > 400) {
     setInnerText("delivery-charge", 50);
