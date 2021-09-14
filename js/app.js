@@ -9,12 +9,14 @@ const loadProducts = () => {
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
   for (const product of allProducts) {
-    console.log(product)
+
     const productsContainer = document.getElementById('all-products');
 
     const image = product.image;
     const div = document.createElement("div");
     div.classList.add("product");
+    // Adding Image and product details dynamically
+
     div.innerHTML = `<div class="single-product mb-5">
       <div>
     <img class="product-image" src=${image}></img>
@@ -73,22 +75,25 @@ const updatePrice = (id, value) => {
 
 // set innerText function
 const setInnerText = (id, value) => {
-  document.getElementById(id).innerText = value;
+  document.getElementById(id).innerText = parseFloat(value).toFixed(2);
+
 };
 
 // update delivery charge and total Tax
 const updateTaxAndCharge = () => {
   const priceConverted = getInputValue("price");
+  parseFloat(priceConverted);
   if (priceConverted > 200) {
     setInnerText("delivery-charge", 30);
-    const totalTex = setInnerText("total-tax", priceConverted * 0.2);
-    toa
+    setInnerText("total-tax", priceConverted * 0.2);
+
   }
-  if (priceConverted > 400) {
+
+  else if (priceConverted > 400) {
     setInnerText("delivery-charge", 50);
     setInnerText("total-tax", priceConverted * 0.3);
   }
-  if (priceConverted > 500) {
+  else if (priceConverted > 500) {
     setInnerText("delivery-charge", 60);
     setInnerText("total-tax", priceConverted * 0.4);
   }
