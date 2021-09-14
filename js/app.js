@@ -111,7 +111,8 @@ const buyNowOption = () => {
   const grandTotal = getInputValue("price") + getInputValue("delivery-charge") +
     getInputValue("total-tax");
   document.getElementById("buying details").innerHTML = `<h1 id="text">Total Purchase Amount ${grandTotal.toFixed(2)} TK</h1>
-  <button class="btn btn-warning>Check Out</button>`;
+  `;
+
 }
 loadProducts();
 
